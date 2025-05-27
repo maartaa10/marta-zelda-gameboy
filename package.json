@@ -20,7 +20,7 @@
     "socket.io-client": "^4.8.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://maartaa10.github.io/projecte_final/",
+  "homepage": "https://maartaa10.github.io/marta-zelda-gameboy/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
