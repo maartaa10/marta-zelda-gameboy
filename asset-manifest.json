@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/marta-zelda-gameboy/static/css/main.b6ba81d1.css",
-    "main.js": "/marta-zelda-gameboy/static/js/main.9a5f918e.js",
+    "main.js": "/marta-zelda-gameboy/static/js/main.e682227c.js",
     "static/js/453.000af42d.chunk.js": "/marta-zelda-gameboy/static/js/453.000af42d.chunk.js",
     "index.html": "/marta-zelda-gameboy/index.html",
     "main.b6ba81d1.css.map": "/marta-zelda-gameboy/static/css/main.b6ba81d1.css.map",
-    "main.9a5f918e.js.map": "/marta-zelda-gameboy/static/js/main.9a5f918e.js.map",
+    "main.e682227c.js.map": "/marta-zelda-gameboy/static/js/main.e682227c.js.map",
     "453.000af42d.chunk.js.map": "/marta-zelda-gameboy/static/js/453.000af42d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b6ba81d1.css",
-    "static/js/main.9a5f918e.js"
+    "static/js/main.e682227c.js"
   ]
 }
