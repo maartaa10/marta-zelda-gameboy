@@ -1,6 +1,10 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:3001';
+const API_BASE_URL = window.location.hostname.includes("localhost")
+? "http://localhost:3000/materials"
+: "https://apirestfullzelda.onrender.com/materials";
+
+
 
 export const getMaterials = () => {
   return axios.get(`${API_BASE_URL}/materials`);
