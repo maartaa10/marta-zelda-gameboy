@@ -4,15 +4,18 @@ import axios from 'axios';
 
 function VotesPerElementGraph() {
   const [chartData, setChartData] = useState(null);
+  const API_BASE_URL = window.location.hostname.includes("localhost")
+  ? "http://localhost:3001"
+  : "https://apirestfullzelda.onrender.com";
 
   const fetchVotesPerElement = async () => {
     try {
-      const votesResponse = await axios.get('http://localhost:3001/votes');
+      const votesResponse = await axios.get(`${API_BASE_URL}/votes`);
       const votesData = votesResponse.data;
 
       const [materialsResponse, monstersResponse] = await Promise.all([
-        axios.get('http://localhost:3001/materials'),
-        axios.get('http://localhost:3001/monsters'),
+        axios.get(`${API_BASE_URL}/materials`),
+        axios.get(`${API_BASE_URL}/monsters`),
       ]);
       const materials = materialsResponse.data;
       const monsters = monstersResponse.data;
