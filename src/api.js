@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_BASE_URL = window.location.hostname.includes("localhost")
-  ? "http://localhost:3000"
+  ? "http://localhost:3001"
   : "https://apirestfullzelda.onrender.com";
 
 
