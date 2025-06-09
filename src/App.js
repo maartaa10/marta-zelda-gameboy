@@ -105,9 +105,12 @@ function App() {
     }
     setIsDeleteModalOpen(false);
   };
+  const API_BASE_URL = window.location.hostname.includes("localhost")
+  ? "http://localhost:3001"
+  : "https://apirestfullzelda.onrender.com";
 
   const handleVote = (id_num, value) => {
-    fetch("http://localhost:3001/votes", {
+    fetch(`${API_BASE_URL}/votes`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id_num, value,user_id: crypto.randomUUID() }),
